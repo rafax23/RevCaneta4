@@ -11,8 +11,16 @@ package revcaneta4;
  */
 public class Caneta {
     
-    public String modelo;
-    public float ponta;
+    private String modelo;
+    private float ponta; 
+    private String cor;
+    private boolean tampada;
+    
+    //construtor
+    public Caneta(){
+        this.tampar();
+        this.cor = "Azul";
+    }
     
     //getter
     public String getModelo(){
@@ -27,7 +35,15 @@ public class Caneta {
     public void setPonta(float p){
         this.ponta = p;
     }
+    
+    public void tampar(){
+        this.tampada = true;
+    }
+    public void destampar(){
+        this.tampada = false;
+    }
+    
     public void status(){
-        System.out.println("Sobre a Caneta: \nModelo: "+this.modelo+"\nPonta: " +this.ponta);
+        System.out.println("Sobre a Caneta: \nModelo: "+this.modelo+"\nPonta: " +this.ponta+"\nCor: "+this.cor+"\nTampada: "+this.tampada);
     }
 }

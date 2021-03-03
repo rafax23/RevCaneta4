@@ -17,9 +17,14 @@ public class RevCaneta4 {
     public static void main(String[] args) {
         // TODO code application logic here
         Caneta c1 = new Caneta();
-        c1.setModelo("Bic");
-        c1.setPonta(0.5f); //f por que é float
-        c1.status();
+        c1.status;
+        //c1.setModelo("Bic"); //metodo acessor set
+        //c1.setPonta(0.5f); //f por que é float
+        //c1.status();
+        //System.out.println("Tenho uma caneta \nModelo: "+c1.getModelo()+"\nPonta: "+c1.getPonta());
+        
+        
+        
     }
     
 }
